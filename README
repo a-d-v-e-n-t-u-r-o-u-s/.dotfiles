@@ -1,0 +1,6 @@
+Installation:
+
+  git clone git://github.com/lazureus/VIM_CONFIG.git ~/.vim
+
+Create simlinks:
+  ln -s ~/dotfiles/vimrc ~/.vimrc
