@@ -12,7 +12,7 @@ set shiftwidth=4
 set softtabstop=4
 set number
 set mouse=a
-set tags=./tags
+set tags=tags
 set list listchars=tab:>-,trail:~,extends:>
 
 highlight WhitespaceEOL ctermfg=white ctermbg=red guifg=white guibg=red
@@ -50,11 +50,15 @@ endfunction
 call SplitToggle()
 call HlSearchToggle()
 
-
+function! CreateTags()
+    :silent !/usr/bin/ctags -R --c++-kinds=+p --fields=+iaS --extra=+qf .
+    :redraw!
+endfunction
 
 map <F2> :NERDTreeToggle<CR>
 inoremap <F2> <C-O>:NERDTreeToggle<CR>
 map <F3> :set number!<CR>
+map <F12> :call CreateTags()<CR>
 nnoremap ,b :ls<CR>:buffer<Space>
 nnoremap <silent> <F10> :<C-U>call SplitToggle()<CR>
 nnoremap <silent> <C-L> :<C-U>call HlSearchToggle()<CR>
