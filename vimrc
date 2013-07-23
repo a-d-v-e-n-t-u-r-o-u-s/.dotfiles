@@ -47,13 +47,23 @@ function! HlSearchToggle()
     endif
 endfunction
 
-call SplitToggle()
-call HlSearchToggle()
-
 function! CreateTags()
     :silent !/usr/bin/ctags -R --c++-kinds=+p --fields=+iaS --extra=+qf .
     :redraw!
 endfunction
+
+call SplitToggle()
+call HlSearchToggle()
+
+set ofu=syntaxcomplete#Complete
+let OmniCpp_GlobalScopeSearch   = 1
+let OmniCpp_DisplayMode         = 1
+let OmniCpp_ShowScopeInAbbr     = 0
+let OmniCpp_ShowPrototypeInAbbr = 1
+let OmniCpp_ShowAccess          = 1
+let OmniCpp_SelectFirstItem     = 1
+let OmniCpp_MayCompleteScope    = 1
+set completeopt=menu,longest
 
 map <F2> :NERDTreeToggle<CR>
 inoremap <F2> <C-O>:NERDTreeToggle<CR>
