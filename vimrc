@@ -12,6 +12,10 @@ set shiftwidth=4
 set softtabstop=4
 set number
 set tags=./tags
+set list listchars=tab:>-,trail:~,extends:>
+
+highlight WhitespaceEOL ctermfg=white ctermbg=red guifg=white guibg=red
+    match WhitespaceEOL /\s\+$/
 
 let g:hlstate=1
 let g:vertical_toggle=0
