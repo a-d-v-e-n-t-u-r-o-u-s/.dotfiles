@@ -19,13 +19,13 @@ let g:vertical_toggle=0
 function! SplitToggle()
   if bufwinnr(1)
     if(g:vertical_toggle==0) 
-      nnoremap + <c-w>+
-      nnoremap - <c-w>-
+      nnoremap + <C-W>+
+      nnoremap - <C-W>-
       let g:vertical_toggle=1
       echo 'Horizontal split resizing ON'
    else
-      nnoremap + <c-w>>
-      map - <c-w><
+      nnoremap + <C-W>>
+      map - <C-W><
       let g:vertical_toggle=0
       echo 'Vertical split resizing ON'
    endif
@@ -53,6 +53,6 @@ map <F3> :set number!<CR>
 nnoremap ,b :ls<CR>:buffer<Space>
 nnoremap <silent> <F10> :<C-U>call SplitToggle()<CR>
 nnoremap <silent> <C-L> :<C-U>call HlSearchToggle()<CR>
-nnoremap <silent><C-j> :set paste<CR>m`o<Esc>``:set nopaste<CR>
+nnoremap <silent><C-J> :set paste<CR>m`o<Esc>``:set nopaste<CR>
 "nnoremap <silent><C-k> :set paste<CR>m`O<Esc>``:set nopaste<CR>
 
