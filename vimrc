@@ -20,6 +20,7 @@ highlight WhitespaceEOL ctermfg=white ctermbg=red guifg=white guibg=red
 
 let g:hlstate=1
 let g:vertical_toggle=0
+let mapleader=","
 
 function! SplitToggle()
   if bufwinnr(1)
@@ -49,6 +50,9 @@ endfunction
 
 function! CreateTags()
     :silent !/usr/bin/ctags -R --c++-kinds=+p --fields=+iaS --extra=+qf .
+    :silent !/usr/bin/cscope -bR
+    cs kill -1
+    cs add cscope.out
     :redraw!
 endfunction
 
