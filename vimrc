@@ -69,12 +69,21 @@ let OmniCpp_SelectFirstItem     = 1
 let OmniCpp_MayCompleteScope    = 1
 set completeopt=menu,longest
 
+"Taglist plugin config
+let Tlist_Use_Right_Window = 1
+let Tlist_Inc_Winwidth = 0
+let Tlist_WinWidth = 45
+let Tlist_GainFocus_On_ToggleOpen= 1
+let Tlist_Ctags_Cmd = 'ctags'
+let Tlist_Show_One_File = 1
+
 map <F2> :NERDTreeToggle<CR>
 inoremap <F2> <C-O>:NERDTreeToggle<CR>
 map <F3> :set number!<CR>
 map <F12> :call CreateTags()<CR>
 nnoremap ,b :ls<CR>:buffer<Space>
 nnoremap <silent> <F10> :<C-U>call SplitToggle()<CR>
+nnoremap <silent> <Leader>t :TlistToggle<CR>
 nnoremap <silent> <C-L> :<C-U>call HlSearchToggle()<CR>
 nnoremap <silent><C-J> :set paste<CR>m`o<Esc>``:set nopaste<CR>
 "nnoremap <silent><C-k> :set paste<CR>m`O<Esc>``:set nopaste<CR>
