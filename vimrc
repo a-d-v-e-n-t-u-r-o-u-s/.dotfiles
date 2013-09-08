@@ -24,7 +24,7 @@ let mapleader=","
 
 function! SplitToggle()
   if bufwinnr(1)
-    if(g:vertical_toggle==0) 
+    if(g:vertical_toggle==0)
       nnoremap + <C-W>+
       nnoremap - <C-W>-
       let g:vertical_toggle=1
@@ -50,6 +50,7 @@ endfunction
 
 function! CreateTags()
     :silent !/usr/bin/ctags -R --c++-kinds=+p --fields=+iaS --extra=+qf .
+    :silent !rm cscope.out
     :silent !/usr/bin/cscope -bR
     cs kill -1
     cs add cscope.out
@@ -82,9 +83,12 @@ inoremap <F2> <C-O>:NERDTreeToggle<CR>
 map <F3> :set number!<CR>
 map <F12> :call CreateTags()<CR>
 nnoremap ,b :ls<CR>:buffer<Space>
+map ,a :A<CR>
+map ,av :AV<CR>
+map ,at :AT<CR>
+map ,ah :AS<CR>
 nnoremap <silent> <F10> :<C-U>call SplitToggle()<CR>
 nnoremap <silent> <Leader>t :TlistToggle<CR>
 nnoremap <silent> <C-L> :<C-U>call HlSearchToggle()<CR>
 nnoremap <silent><C-J> :set paste<CR>m`o<Esc>``:set nopaste<CR>
 "nnoremap <silent><C-k> :set paste<CR>m`O<Esc>``:set nopaste<CR>
-
