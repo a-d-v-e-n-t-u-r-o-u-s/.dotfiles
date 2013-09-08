@@ -49,9 +49,15 @@ function! HlSearchToggle()
 endfunction
 
 function! CreateTags()
-    :silent !/usr/bin/ctags -R --c++-kinds=+p --fields=+iaS --extra=+qf .
-    :silent !rm cscope.out
-    :silent !/usr/bin/cscope -bR
+    if has("win32")
+        :silent !ctags -R --c++-kinds=+p --fields=+iaS --extra=+qf .
+        :silent !del cscope.out
+        :silent !cscope -bR
+    else
+        :silent !/usr/bin/ctags -R --c++-kinds=+p --fields=+iaS --extra=+qf .
+        :silent !rm cscope.out
+        :silent !/usr/bin/cscope -bR
+    endif
     cs kill -1
     cs add cscope.out
     :redraw!
