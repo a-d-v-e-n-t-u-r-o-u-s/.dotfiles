@@ -1,7 +1,3 @@
-if has("win32")
-    set runtimepath+=$USERPROFILE/vimfiles
-endif
-
 runtime bundle/pathogen/autoload/pathogen.vim
 
 execute pathogen#infect()
