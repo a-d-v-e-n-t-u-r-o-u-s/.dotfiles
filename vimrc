@@ -87,6 +87,13 @@ let Tlist_Show_One_File = 1
 map <F2> :NERDTreeToggle<CR>
 inoremap <F2> <C-O>:NERDTreeToggle<CR>
 map <F3> :set number!<CR>
+
+if has("win32")
+    map <F11> :!cls<CR>
+else
+    map <F11> :!clear<CR>
+endif
+
 map <F12> :call CreateTags()<CR>
 nnoremap ,b :ls<CR>:buffer<Space>
 map ,a :A<CR>
