@@ -68,6 +68,7 @@ function! HlSearchToggle()
 endfunction
 
 function! CreateTags()
+    cs kill -1
     if has("win32")
         :silent !ctags -R --c++-kinds=+p --fields=+iaS --extra=+qf .
         :silent !del cscope.out
@@ -77,7 +78,6 @@ function! CreateTags()
         :silent !rm cscope.out
         :silent !/usr/bin/cscope -bR
     endif
-    cs kill -1
     cs add cscope.out
     :redraw!
 endfunction
