@@ -7,9 +7,6 @@ syntax on
 
 filetype plugin indent on
 
-set expandtab
-set shiftwidth=4
-set softtabstop=4
 set number
 set mouse=a
 set tags=tags
@@ -19,6 +16,7 @@ highlight WhitespaceEOL ctermfg=white ctermbg=red guifg=white guibg=red
     match WhitespaceEOL /\s\+$/
 
 let g:hlstate=1
+let g:spaces_indenting=1
 let g:vertical_toggle=0
 let mapleader=","
 
@@ -36,6 +34,27 @@ function! SplitToggle()
       echo 'Vertical split resizing ON'
    endif
  endif
+endfunction
+
+function! TabsSpacesToggle()
+    if(bufwinnr(1))
+        if(g:spaces_indenting==0)
+            set noexpandtab
+            set copyindent
+            set preserveindent
+            set softtabstop=0
+            set shiftwidth=4
+            set tabstop=4
+            let g:spaces_indenting=1
+            echo 'TABS INDENTING ON'
+        else
+            set expandtab
+            set shiftwidth=4
+            set softtabstop=4
+            let g:spaces_indenting=0
+            echo 'SPACES INDENTING ON'
+        endif
+    endif
 endfunction
 
 function! HlSearchToggle()
@@ -63,6 +82,7 @@ function! CreateTags()
     :redraw!
 endfunction
 
+call TabsSpacesToggle()
 call SplitToggle()
 call HlSearchToggle()
 
@@ -100,6 +120,8 @@ map ,a :A<CR>
 map ,av :AV<CR>
 map ,at :AT<CR>
 map ,ah :AS<CR>
+nnoremap <silent> <F8> :GundoToggle<CR>
+nnoremap <silent> <F9> :<C-U>call TabsSpacesToggle()<CR>
 nnoremap <silent> <F10> :<C-U>call SplitToggle()<CR>
 nnoremap <silent> <Leader>t :TlistToggle<CR>
 nnoremap <silent> <C-L> :<C-U>call HlSearchToggle()<CR>
