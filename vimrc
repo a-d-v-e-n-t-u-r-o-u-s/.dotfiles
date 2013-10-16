@@ -67,6 +67,9 @@ function! HlSearchToggle()
     endif
 endfunction
 
+"todo the ctags command generated right now tags for definition and
+"declaration this shall be changed to the definition only or give some
+"possibility of choice for the user
 function! CreateTags()
     cs kill -1
     if has("win32")
