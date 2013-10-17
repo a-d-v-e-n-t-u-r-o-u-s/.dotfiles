@@ -127,6 +127,7 @@ nnoremap <silent> <F8> :GundoToggle<CR>
 nnoremap <silent> <F9> :<C-U>call TabsSpacesToggle()<CR>
 nnoremap <silent> <F10> :<C-U>call SplitToggle()<CR>
 nnoremap <silent> <Leader>t :TlistToggle<CR>
+nnoremap <silent> <Leader><C-]> <C-w><C-]><C-w>T
 nnoremap <silent> <C-L> :<C-U>call HlSearchToggle()<CR>
 nnoremap <silent><C-J> :set paste<CR>m`o<Esc>``:set nopaste<CR>
 "nnoremap <silent><C-k> :set paste<CR>m`O<Esc>``:set nopaste<CR>
