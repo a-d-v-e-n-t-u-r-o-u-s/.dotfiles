@@ -107,6 +107,13 @@ let Tlist_GainFocus_On_ToggleOpen= 1
 let Tlist_Ctags_Cmd = 'ctags'
 let Tlist_Show_One_File = 1
 
+"Grep plugin config
+let Grep_Default_Filelist = '*.c *h'
+let Grep_Skip_Files = '*.bak *~ *.swp'
+"let Grep_Null_Device = 'dev/null'
+let Grep_Shell_Quoute_Char = "'"
+let Grep_Shell_Escape_Char = "'"
+
 map <F2> :NERDTreeToggle<CR>
 inoremap <F2> <C-O>:NERDTreeToggle<CR>
 map <F3> :set number!<CR>
@@ -127,6 +134,10 @@ nnoremap <silent> <F8> :GundoToggle<CR>
 nnoremap <silent> <F9> :<C-U>call TabsSpacesToggle()<CR>
 nnoremap <silent> <F10> :<C-U>call SplitToggle()<CR>
 nnoremap <silent> <Leader>t :TlistToggle<CR>
+nnoremap <silent> <Leader>j :lnext<CR>
+nnoremap <silent> <Leader>k :lprevious<CR>
+nnoremap <silent> <Leader>h :lolder<CR>
+nnoremap <silent> <Leader>l :lnewer<CR>
 nnoremap <silent> <Leader><C-]> <C-w><C-]><C-w>T
 nnoremap <silent> <C-L> :<C-U>call HlSearchToggle()<CR>
 nnoremap <silent><C-J> :set paste<CR>m`o<Esc>``:set nopaste<CR>
