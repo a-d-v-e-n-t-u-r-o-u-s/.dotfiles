@@ -36,6 +36,21 @@ function! SplitToggle()
  endif
 endfunction
 
+function! s:GoForError(partcmd)
+    try
+        try
+            exec "l". a:partcmd
+         catch /:E776:/
+             " No location list
+             exec "c". a:partcmd
+         endtry
+     catch
+         echohl ErrorMsg
+         echomsg matchstr(v:exception, ':\zs.*')
+         echohl None
+     endtry
+endfunc
+
 function! TabsSpacesToggle()
     if(bufwinnr(1))
         if(g:spaces_indenting==0)
@@ -114,6 +129,11 @@ let Grep_Skip_Files = '*.bak *~ *.swp'
 let Grep_Shell_Quoute_Char = "'"
 let Grep_Shell_Escape_Char = "'"
 
+com! -bar NextError  call s:GoForError("next")
+com! -bar PrevError  call s:GoForError("previous")
+com! -bar OlderError  call s:GoForError("older")
+com! -bar NewerError  call s:GoForError("newer")
+
 map <F2> :NERDTreeToggle<CR>
 inoremap <F2> <C-O>:NERDTreeToggle<CR>
 map <F3> :set number!<CR>
@@ -130,14 +150,15 @@ map ,a :A<CR>
 map ,av :AV<CR>
 map ,at :AT<CR>
 map ,ah :AS<CR>
+nnoremap <silent> <F5> :source $MYVIMRC<CR>
 nnoremap <silent> <F8> :GundoToggle<CR>
 nnoremap <silent> <F9> :<C-U>call TabsSpacesToggle()<CR>
 nnoremap <silent> <F10> :<C-U>call SplitToggle()<CR>
 nnoremap <silent> <Leader>t :TlistToggle<CR>
-nnoremap <silent> <Leader>j :lnext<CR>
-nnoremap <silent> <Leader>k :lprevious<CR>
-nnoremap <silent> <Leader>h :lolder<CR>
-nnoremap <silent> <Leader>l :lnewer<CR>
+nnoremap <silent> <Leader>j :NextError<CR>
+nnoremap <silent> <Leader>k :PrevError<CR>
+nnoremap <silent> <Leader>h :OlderError<CR>
+nnoremap <silent> <Leader>l :NewerError<CR>
 nnoremap <silent> <Leader><C-]> <C-w><C-]><C-w>T
 nnoremap <silent> <C-L> :<C-U>call HlSearchToggle()<CR>
 nnoremap <silent><C-J> :set paste<CR>m`o<Esc>``:set nopaste<CR>
