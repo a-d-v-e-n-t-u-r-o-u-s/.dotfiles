@@ -1,5 +1,6 @@
 runtime bundle/pathogen/autoload/pathogen.vim
 
+
 execute pathogen#infect()
 call pathogen#helptags()
 
@@ -125,9 +126,6 @@ let Tlist_Show_One_File = 1
 "Grep plugin config
 let Grep_Default_Filelist = '*.c *h'
 let Grep_Skip_Files = '*.bak *~ *.swp'
-"let Grep_Null_Device = 'dev/null'
-let Grep_Shell_Quoute_Char = "'"
-let Grep_Shell_Escape_Char = "'"
 
 com! -bar NextError  call s:GoForError("next")
 com! -bar PrevError  call s:GoForError("previous")
