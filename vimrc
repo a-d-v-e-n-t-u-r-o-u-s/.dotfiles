@@ -125,7 +125,13 @@ let Tlist_Show_One_File = 1
 
 "Grep plugin config
 let Grep_Default_Filelist = '*.c *h'
-let Grep_Skip_Files = '*.bak *~ *.swp'
+if has("win32")
+    let Grep_Find_Path = '"C:\Program Files\GnuWin32\bin\find.exe"'
+    let Grep_Skip_Files = '"*.bak *~ *.swp"'
+    let Grep_Find_Use_Xargs = 0
+else
+    let Grep_Skip_Files = '*.bak *~ *.swp'
+endif
 
 com! -bar NextError  call s:GoForError("next")
 com! -bar PrevError  call s:GoForError("previous")
