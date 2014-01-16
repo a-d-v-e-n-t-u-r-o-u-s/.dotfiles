@@ -115,6 +115,19 @@ let OmniCpp_SelectFirstItem     = 1
 let OmniCpp_MayCompleteScope    = 1
 set completeopt=menu,longest
 
+"Syntastic plugin config
+let g:syntastic_debug=1
+let g:syntastic_c_checkers=['gcc', 'oclint', 'splint', 'cppcheck', 'sparse']
+let g:syntastic_aggregate_errors=1
+let g:syntastic_auto_loc_list=1
+let g:syntastic_always_populate_loc_list =1
+let g:syntastic_c_check_header=1
+let g:syntastic_id_checkers=1
+let g:syntastic_enable_balloons= 1
+let g:syntastic_check_on_wq=0
+let g:syntastic_check_on_open=1
+let g:syntastic_enable_signs=1
+
 "Taglist plugin config
 let Tlist_Use_Right_Window = 1
 let Tlist_Inc_Winwidth = 0
