@@ -116,11 +116,11 @@ let OmniCpp_MayCompleteScope    = 1
 set completeopt=menu,longest
 
 "Syntastic plugin config
-let g:syntastic_debug=1
+let g:syntastic_debug=0
 let g:syntastic_c_checkers=['gcc', 'oclint', 'splint', 'cppcheck', 'sparse']
 let g:syntastic_aggregate_errors=1
-let g:syntastic_auto_loc_list=1
-let g:syntastic_always_populate_loc_list =1
+let g:syntastic_auto_loc_list=0
+let g:syntastic_always_populate_loc_list =0
 let g:syntastic_c_check_header=1
 let g:syntastic_id_checkers=1
 let g:syntastic_enable_balloons= 1
@@ -162,7 +162,7 @@ else
 endif
 
 map <F12> :call CreateTags()<CR>
-nnoremap ,b :ls<CR>:buffer<Space>
+nnoremap <Leader>f :ls<CR>:buffer<Space>
 map ,a :A<CR>
 map ,av :AV<CR>
 map ,at :AT<CR>
@@ -171,7 +171,7 @@ nnoremap <silent> <F5> :source $MYVIMRC<CR>
 nnoremap <silent> <F8> :GundoToggle<CR>
 nnoremap <silent> <F9> :<C-U>call TabsSpacesToggle()<CR>
 nnoremap <silent> <F10> :<C-U>call SplitToggle()<CR>
-nnoremap <silent> <Leader>t :TlistToggle<CR>
+nnoremap <silent> <Leader>i :TlistToggle<CR>
 nnoremap <silent> <Leader>j :NextError<CR>
 nnoremap <silent> <Leader>k :PrevError<CR>
 nnoremap <silent> <Leader>h :OlderError<CR>
