@@ -108,16 +108,6 @@ call HlSearchToggle()
 
 let NERDTreeDirArrows=0
 
-set ofu=syntaxcomplete#Complete
-let OmniCpp_GlobalScopeSearch   = 1
-let OmniCpp_DisplayMode         = 1
-let OmniCpp_ShowScopeInAbbr     = 0
-let OmniCpp_ShowPrototypeInAbbr = 1
-let OmniCpp_ShowAccess          = 1
-let OmniCpp_SelectFirstItem     = 1
-let OmniCpp_MayCompleteScope    = 1
-set completeopt=menu,longest
-
 "Syntastic plugin config
 let g:syntastic_debug=0
 let g:syntastic_c_checkers=['gcc', 'oclint', 'splint', 'cppcheck', 'sparse']
