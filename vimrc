@@ -105,6 +105,9 @@ call TabsSpacesToggle()
 call SplitToggle()
 call HlSearchToggle()
 
+
+let NERDTreeDirArrows=0
+
 set ofu=syntaxcomplete#Complete
 let OmniCpp_GlobalScopeSearch   = 1
 let OmniCpp_DisplayMode         = 1
