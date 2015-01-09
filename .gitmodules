@@ -1,27 +1,27 @@
 [submodule "bundle/pathogen"]
 	path = bundle/pathogen
-	url = git@github.com:tpope/vim-pathogen.git
+	url = https://github.com/tpope/vim-pathogen.git
 [submodule "bundle/sensible"]
 	path = bundle/sensible
-	url = git@github.com:tpope/vim-sensible.git
+	url = https://github.com/tpope/vim-sensible.git
 [submodule "bundle/scriptease"]
 	path = bundle/scriptease
-	url = git@github.com:tpope/vim-scriptease.git
+	url = https://github.com/tpope/vim-scriptease.git
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
-	url = git@github.com:scrooloose/nerdtree.git
+	url = https://github.com/scrooloose/nerdtree.git
 [submodule "bundle/cscope"]
 	path = bundle/cscope
-	url = git@github.com:vim-scripts/cscope.vim.git
+	url = https://github.com/vim-scripts/cscope.vim.git
 [submodule "bundle/taglist"]
 	path = bundle/taglist
-	url = git@github.com:vim-scripts/taglist.vim.git
+	url = https://github.com/vim-scripts/taglist.vim.git
 [submodule "bundle/a"]
 	path = bundle/a
-	url = git@github.com:vim-scripts/a.vim.git
+	url = https://github.com/vim-scripts/a.vim.git
 [submodule "bundle/surround"]
 	path = bundle/surround
-	url = git@github.com:tpope/vim-surround.git
+	url = https://github.com/tpope/vim-surround.git
 [submodule "bundle/repeat"]
 	path = bundle/repeat
 	url = https://github.com/tpope/vim-repeat.git
@@ -45,16 +45,16 @@
 	url = https://github.com/tpope/vim-abolish.git
 [submodule "bundle/grep"]
 	path = bundle/grep
-	url = git@github.com:vim-scripts/grep.vim.git
+	url = https://github.com/vim-scripts/grep.vim.git
 [submodule "bundle/nerdcommenter"]
 	path = bundle/nerdcommenter
-	url = git@github.com:vim-scripts/The-NERD-Commenter.git
+	url = https://github.com/vim-scripts/The-NERD-Commenter.git
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
-	url = git@github.com:scrooloose/syntastic.git
+	url = https://github.com/scrooloose/syntastic.git
 [submodule "bundle/command-t"]
 	path = bundle/command-t
-	url = git@github.com:wincent/command-t.git
+	url = https://github.com/wincent/command-t.git
 [submodule "bundle/YouCompleteMe"]
 	path = bundle/YouCompleteMe
-	url = git@github.com:Valloric/YouCompleteMe.git
+	url = https://github.com/Valloric/YouCompleteMe.git
