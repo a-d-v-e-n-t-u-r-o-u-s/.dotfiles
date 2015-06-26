@@ -14,6 +14,20 @@
       "creation": 1425399056,
       "completion": 0,
       "tasks": []
+    },
+    {
+      "text": "TAGLIST: crash of plugin when I jump to other tab but list of fnc,variables are left open and then I'll come back to previous tab",
+      "priority": "medium",
+      "creation": 1425474586,
+      "completion": 0,
+      "tasks": []
+    },
+    {
+      "text": "VIM: when highlighting text it jumps to the next declaration, let it stay",
+      "priority": "medium",
+      "creation": 1425475543,
+      "completion": 0,
+      "tasks": []
     }
   ]
 }
