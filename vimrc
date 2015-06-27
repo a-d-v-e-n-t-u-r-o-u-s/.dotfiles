@@ -155,11 +155,10 @@ else
 endif
 
 map <F12> :call CreateTags()<CR>
-nnoremap <Leader>f :ls<CR>:buffer<Space>
-map ,a :A<CR>
-map ,av :AV<CR>
-map ,at :AT<CR>
-map ,ah :AS<CR>
+map <Leader>a :A<CR>
+map <Leader>av :AV<CR>
+map <Leader>at :AT<CR>
+map <Leader>ah :AS<CR>
 nnoremap <silent> <F5> :source $MYVIMRC<CR>
 nnoremap <silent> <F8> :GundoToggle<CR>
 nnoremap <silent> <F9> :<C-U>call TabsSpacesToggle()<CR>
