@@ -155,10 +155,13 @@ else
 endif
 
 map <F12> :call CreateTags()<CR>
+
+"A plugin mappings
 map <Leader>a :A<CR>
 map <Leader>av :AV<CR>
 map <Leader>at :AT<CR>
-map <Leader>ah :AS<CR>
+map <Leader>as :AS<CR>
+
 nnoremap <silent> <F5> :source $MYVIMRC<CR>
 nnoremap <silent> <F8> :GundoToggle<CR>
 nnoremap <silent> <F9> :<C-U>call TabsSpacesToggle()<CR>
