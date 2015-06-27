@@ -130,7 +130,7 @@ let Tlist_Ctags_Cmd = 'ctags'
 let Tlist_Show_One_File = 1
 
 "Grep plugin config
-let Grep_Default_Filelist = '*.c *h'
+let Grep_Default_Filelist = '*.c *.h *.cpp *.hpp'
 if has("win32")
     let Grep_Find_Path = '"C:\Program Files\GnuWin32\bin\find.exe"'
     let Grep_Skip_Files = '"*.bak *~ *.swp"'
