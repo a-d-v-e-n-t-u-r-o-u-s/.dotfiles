@@ -58,3 +58,6 @@
 [submodule "bundle/vim-bookmarks"]
 	path = bundle/vim-bookmarks
 	url = https://github.com/MattesGroeger/vim-bookmarks.git
+[submodule "bundle/snipmate-snippets"]
+	path = bundle/snipmate-snippets
+	url = https://github.com/vim-scripts/snipmate-snippets.git
