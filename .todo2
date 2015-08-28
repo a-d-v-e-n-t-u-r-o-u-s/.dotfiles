@@ -28,6 +28,13 @@
       "creation": 1425475543,
       "completion": 0,
       "tasks": []
+    },
+    {
+      "text": "VIM: when file is changed from git why is it not reloaded on vim visiting",
+      "priority": "veryhigh",
+      "creation": 1436796608,
+      "completion": 0,
+      "tasks": []
     }
   ]
 }
