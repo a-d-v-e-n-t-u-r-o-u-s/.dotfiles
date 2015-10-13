@@ -104,6 +104,14 @@ function! CreateTags()
     :redraw!
 endfunction
 
+function! Clear()
+    if has("win32")
+        :!cls
+    else
+        :!clear
+    endif
+endfunction
+
 call TabsSpacesToggle()
 call SplitToggle()
 call HlSearchToggle()
@@ -150,13 +158,7 @@ com! -bar NewerError  call s:GoForError("newer")
 map <F2> :NERDTreeToggle<CR>
 inoremap <F2> <C-O>:NERDTreeToggle<CR>
 map <F3> :set number!<CR>
-
-if has("win32")
-    map <F11> :!cls<CR>
-else
-    map <F11> :!clear<CR>
-endif
-
+map <F11> :call Clear()<CR>
 map <F12> :call CreateTags()<CR>
 
 "A plugin mappings
@@ -171,6 +173,7 @@ let g:bookmark_save_per_working_dir = 1
 let g:bookmark_highlight_lines = 1
 
 nnoremap <silent> <F5> :source $MYVIMRC<CR>
+nnoremap <silent> <C-F5> :e!<CR>
 nnoremap <silent> <F8> :GundoToggle<CR>
 nnoremap <silent> <F9> :<C-U>call TabsSpacesToggle()<CR>
 nnoremap <silent> <F10> :<C-U>call SplitToggle()<CR>
