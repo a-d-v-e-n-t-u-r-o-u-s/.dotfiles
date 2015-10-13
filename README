@@ -73,4 +73,14 @@ The following is also available on terminals which support it:
 
     <Esc>       cancel (dismisses file listing)
 
+[vim-bookmarks]
 
+    mm          Add/remove bookmark at current                          :BookmarkToggle
+    mi          Add/edit/remove annotation at current line              :BookmarkAnnotate <TEXT>
+    mn          Jump to next bookmark in buffer                         :BookmarkNext
+    mp          Jump to previous bookmark in buffer                     :BookmarkPrev
+    ma          Show all bookmarks (toggle)                             :BookmarkShowAll
+    mc          Clear bookmarks in current buffer only                  :BookmarkClear
+    mx          Clear bookmarks in all buffers                          :BookmarkClearAll
+    mkk         Move up bookmark at current line                        :BookmarkMoveUp
+    mjj         Move down bookmark at current line                      :BookmarkMoveDown
