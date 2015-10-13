@@ -16,6 +16,9 @@ set list listchars=tab:>-,trail:~,extends:>
 highlight WhitespaceEOL ctermfg=white ctermbg=red guifg=white guibg=red
     match WhitespaceEOL /\s\+$/
 
+highlight BookmarkLine ctermbg=21 ctermfg=NONE
+highlight BookmarkAnnotationLine ctermbg=22 ctermfg=NONE
+
 let g:hlstate=1
 let g:spaces_indenting=1
 let g:vertical_toggle=0
@@ -161,6 +164,11 @@ map <Leader>a :A<CR>
 map <Leader>av :AV<CR>
 map <Leader>at :AT<CR>
 map <Leader>as :AS<CR>
+
+"vim-bookmarks mappings
+let g:bookmark_save_per_working_dir = 1
+"let g:bookmark_manage_per_buffer = 1
+let g:bookmark_highlight_lines = 1
 
 nnoremap <silent> <F5> :source $MYVIMRC<CR>
 nnoremap <silent> <F8> :GundoToggle<CR>
