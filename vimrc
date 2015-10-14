@@ -169,8 +169,10 @@ map <Leader>as :AS<CR>
 
 "vim-bookmarks mappings
 let g:bookmark_save_per_working_dir = 1
-"let g:bookmark_manage_per_buffer = 1
 let g:bookmark_highlight_lines = 1
+
+"cscope settings and mappings
+let g:cscope_silent = 1
 
 nnoremap <silent> <F5> :source $MYVIMRC<CR>
 nnoremap <silent> <C-F5> :e!<CR>
