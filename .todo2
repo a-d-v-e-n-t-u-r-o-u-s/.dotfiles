@@ -5,14 +5,14 @@
       "text": "VIM-BOOKMARKS: check why showing all bookmarks delete them all",
       "priority": "high",
       "creation": 1425398183,
-      "completion": 0,
+      "completion": 1444898105,
       "tasks": []
     },
     {
       "text": "VIM-BOOKMARKS: bookmarks are cleared when going to definion of function",
       "priority": "veryhigh",
       "creation": 1425399056,
-      "completion": 0,
+      "completion": 1444898101,
       "tasks": []
     },
     {
@@ -33,7 +33,7 @@
       "text": "VIM: when file is changed from git why is it not reloaded on vim visiting",
       "priority": "veryhigh",
       "creation": 1436796608,
-      "completion": 0,
+      "completion": 1444817892,
       "tasks": []
     }
   ]
