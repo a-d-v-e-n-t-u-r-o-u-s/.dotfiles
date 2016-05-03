@@ -1,9 +1,39 @@
 Installation:
 
-  git clone git://github.com/lazureus/VIM_CONFIG.git ~/.vim
+Currently repository must be cloned to the $HOME directory because of
+some error occuring in pathogen#infect() function.
 
-Create simlinks:
-  ln -s ~/dotfiles/vimrc ~/.vimrc
+  git clone https://github.com/a-d-v-e-n-t-u-r-o-u-s/.dotfiles.git
+
+and then you must clone all necessary submodules with command:
+
+  git submodule update --init --recursive
+
+Symlinks must be created with following manner:
+  ln -s ~/.dotfiles/vimrc ~/.vimrc
+  ln -s ~/.dotfiles/ ~/.vim
+
+In order to fully use this vim configuration you must probably build
+a few things from the source. In order to build YouCompleteMe plugin,
+please follow tutorial below:
+
+https://github.com/Valloric/YouCompleteMe
+
+it should be usually preceded with building Vim from the source, please
+follow tutorial below:
+
+https://github.com/Valloric/YouCompleteMe/wiki/Building-Vim-from-source
+
+After successfull building of Vim and YouCompleteMe plugin it time to
+take care about Command-T plugin, please proceed with following tutorial:
+
+https://github.com/spyou/Command-T
+
+In order to be able of indexing you would need some linux packages like:
+
+sudo apt-get install csope exuberant-tags
+
+At this moment you shall have workable Vim configuration.
 
 Mappings:
 
