@@ -124,12 +124,14 @@ set -o vi
 
 #prv aliases
 #alias go='xdg-open'
+# set vim as default editor for midnight commander
+alias mc='EDITOR=vim mc'
 alias ggvim='cd ~/.vim/'
 alias ggithub='cd ~/Documents/source/github'
 alias m0857_38='cd ~/Documents/source/work_git/M0857_38/source'
 alias m0883_20='cd ~/Documents/source/work_git/M0883_20/source'
 alias m0883_32_docs='cd ~/Documents/source/work_git/M0883_32/documentation'
-alias m0890_0x='cd ~/Documents/source/work_git/M0890_0x/source'
+alias m0890_0x='cd ~/Documents/source/work_git/M0890_01/source'
 
 #prv git status to bash
 export PS1='\[\033[01;32m\]\u@\h\[\033[01;34m\] \w\[\033[01;33m\]$(__git_ps1)\[\033[01;34m\] \$\[\033[00m\] '
