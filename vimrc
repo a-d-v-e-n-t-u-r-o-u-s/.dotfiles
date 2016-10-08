@@ -9,6 +9,7 @@ syntax on
 filetype plugin indent on
 
 set number
+set showcmd
 set mouse=a
 set tags=tags
 set list listchars=tab:>-,trail:~,extends:>
