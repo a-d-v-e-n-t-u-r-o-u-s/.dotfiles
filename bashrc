@@ -130,8 +130,10 @@ alias ggvim='cd ~/.vim/'
 alias ggithub='cd ~/Documents/source/github'
 alias m0857_38='cd ~/Documents/source/work_git/M0857_38/source'
 alias m0883_20='cd ~/Documents/source/work_git/M0883_20/source'
+alias m0883_32='cd ~/Documents/source/work_git/M0883_32/source'
 alias m0883_32_docs='cd ~/Documents/source/work_git/M0883_32/documentation'
 alias m0890_0x='cd ~/Documents/source/work_git/M0890_01/source'
+alias m0890_10='cd ~/Documents/source/work_git/M0890_10/source'
 
 #prv git status to bash
 export PS1='\[\033[01;32m\]\u@\h\[\033[01;34m\] \w\[\033[01;33m\]$(__git_ps1)\[\033[01;34m\] \$\[\033[00m\] '
@@ -154,15 +156,18 @@ then export TODO_SHOW_CWD="$PWD";
     fi;
 fi'
 
+
 export PROMPT_COMMAND
+export EDITOR=/opt/vim/bin/vim
 
 #prv PATH modifications
 export PATH=/opt/todo/bin/:$PATH
+export PATH=/opt/scripts/:$PATH
 export PATH=/opt/vim/bin/:$PATH
 export PATH=/opt/eagle-7.5.0/bin/:$PATH
 export PATH=/opt/eclipse-mars.2/:$PATH
-export PATH=/opt/doxygen-1.8.11/bin:$PATH
 
 SSH_ENV="$HOME/.ssh/environment"
 export GOPATH="/usr/share/go/"
 export PATH=$GOPATH:$PATH
+export CSCOPE_EDITOR=vim
