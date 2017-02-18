@@ -1,0 +1,37 @@
+[Desktop Entry]
+DefaultProfile=
+
+[Favorite Profiles]
+Favorites=
+
+[FileDialogSize]
+Height 1080=480
+Height 768=480
+Width 1366=640
+Width 1920=640
+
+[KFileDialog Settings]
+Recent Files[$e]=file://$HOME/Downloads/konsole.shortcuts,file://$HOME/.dotfiles/tab.css,file://$HOME/tab.css
+Recent URLs[$e]=file://$HOME/Downloads/,file://$HOME/.dotfiles/
+
+[MainWindow]
+Height 1024=649
+Height 1080=1080
+Height 720=691
+Height 768=739
+State=AAAA/wAAAAD9AAAAAAAABVYAAAKhAAAABAAAAAQAAAAIAAAACPwAAAAA
+ToolBarsMovable=Disabled
+Width 1280=845
+Width 1366=1366
+Width 1920=1920
+Window-Maximized 1024x1280=true
+Window-Maximized 1080x1920=true
+Window-Maximized 600x800=true
+Window-Maximized 768x1024=true
+Window-Maximized 768x1360=true
+
+[TabBar]
+NewTabBehavior=PutNewTabAfterCurrentTab
+ShowQuickButtons=true
+TabBarUseUserStyleSheet=true
+TabBarUserStyleSheetFile=file:///home/babula/.dotfiles/tab.css
