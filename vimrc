@@ -179,6 +179,8 @@ let g:cscope_silent = 1
 
 let g:cscope_interested_files = '\.c$\|\.h$\|Makefile'
 
+let g:ycm_max_diagnostics_to_display = 200
+
 nnoremap <leader>fa :call cscope#findInteractive(expand('<cword>'))<CR>
 nnoremap <leader>l :call ToggleLocationList()<CR>
 " s: Find this C symbol
