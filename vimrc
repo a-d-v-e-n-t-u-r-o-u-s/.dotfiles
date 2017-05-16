@@ -106,17 +106,11 @@ endfunction
 "declaration this shall be changed to the definition only or give some
 "possibility of choice for the user
 function! CreateTags()
-    cs kill -1
     if has("win32")
         :silent !ctags -R --c++-kinds=+p --fields=+iaS --extra=+qf .
-        :silent !del cscope.out
-        :silent !cscope -bR
     else
         :silent !/usr/bin/ctags -R --c++-kinds=+p --fields=+iaS --extra=+qf .
-        :silent !rm cscope.out
-        :silent !/usr/bin/cscope -bR
     endif
-    cs add cscope.out
     :redraw!
 endfunction
 
