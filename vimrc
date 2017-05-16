@@ -192,6 +192,24 @@ let g:bookmark_highlight_lines = 1
 let g:cscope_silent = 1
 
 
+if has("cscope")
+    set csprg=/usr/bin/cscope
+    " change this to 1 to search ctags DBs first
+    set csto=1
+    set cst
+    set nocsverb
+    "add any database in current directory
+    if filereadable("cscope.out")
+        echo "Adding user cscope db"
+        cs add cscope.out
+    "else add database pointed to by environment
+    elseif $CSCOPE_DB != ""
+        echo "Adding default cscope db"
+        cs add $CSCOPE_DB
+    endif
+set csverb
+endif
+
 let g:cscope_interested_files = '\.c$\|\.h$\|Makefile'
 
 let g:ycm_max_diagnostics_to_display = 200
