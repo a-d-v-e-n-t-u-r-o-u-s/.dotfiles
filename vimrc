@@ -13,6 +13,10 @@ set showcmd
 set mouse=a
 set tags=tags
 set list listchars=tab:>-,trail:~,extends:>
+set statusline=%t\ -\ FileType:\ %y\ FileEncoding:\ %{&fenc}%=%P\ 0x%02B\ %3c
+
+highlight ColorColumn ctermbg=magenta
+call matchadd('ColorColumn', '\%101v', 100)
 
 highlight WhitespaceEOL ctermfg=white ctermbg=red guifg=white guibg=red
     match WhitespaceEOL /\s\+$/
