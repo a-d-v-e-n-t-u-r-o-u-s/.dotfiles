@@ -26,6 +26,7 @@ highlight BookmarkAnnotationLine ctermbg=22 ctermfg=NONE
 
 let g:hlstate=1
 let g:spaces_indenting=1
+let g:linux_kernel_tabs=0
 let g:vertical_toggle=0
 let mapleader=","
 
@@ -63,14 +64,24 @@ endfunc
 function! TabsSpacesToggle()
     if(bufwinnr(1))
         if(g:spaces_indenting==0)
-            set noexpandtab
-            set copyindent
-            set preserveindent
-            set softtabstop=0
-            set shiftwidth=4
-            set tabstop=4
-            let g:spaces_indenting=1
-            echo 'TABS INDENTING ON'
+            if(g:linux_kernel_tabs==0)
+                set noexpandtab
+                set copyindent
+                set preserveindent
+                set softtabstop=0
+                set shiftwidth=4
+                set tabstop=4
+                let g:linux_kernel_tabs=1
+                echo 'TABS INDENTING ON'
+            else
+                set tabstop=8
+                set shiftwidth=8
+                set softtabstop=8
+                set noexpandtab
+                let g:linux_kernel_tabs=0
+                let g:spaces_indenting=1
+                echo 'LINUX KERNEL INDENTING ON'
+            endif
         else
             set expandtab
             set shiftwidth=4
