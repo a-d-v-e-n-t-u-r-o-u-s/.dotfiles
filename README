@@ -10,8 +10,15 @@ and then you must clone all necessary submodules with command:
   git submodule update --init --recursive
 
 Symlinks must be created with following manner:
+
+VIMRC:
   ln -s ~/.dotfiles/vimrc ~/.vimrc
   ln -s ~/.dotfiles/ ~/.vim
+BASHRC:
+  ln -s ~/.dotfiles/bashrc ~/.vimrc
+VIMPERATOR:
+  ln -s ~/.dotfiles/vimperator ~/.vimperatorrc
+
 
 In order to fully use this vim configuration you must probably build
 a few things from the source. In order to build YouCompleteMe plugin,
