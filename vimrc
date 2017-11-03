@@ -28,7 +28,20 @@ let g:hlstate=1
 let g:spaces_indenting=1
 let g:linux_kernel_tabs=0
 let g:vertical_toggle=0
+let g:vim_diff_on=0
 let mapleader=","
+
+function! VimDiffToggle()
+    if bufwinnr(1)
+        if(g:vim_diff_on==0)
+            :silent windo diffthis
+            let g:vim_diff_on=1
+        else
+            :silent windo diffoff
+            let g:vim_diff_on=0
+        endif
+    endif
+endfunction
 
 function! SplitToggle()
   if bufwinnr(1)
@@ -233,7 +246,7 @@ nnoremap  <leader>ff :call CscopeFind('f', expand('<cword>'))<CR>
 " i: Find files #including this file
 nnoremap  <leader>fi :call CscopeFind('i', expand('<cword>'))<CR>
 
-
+nnoremap <silent> <F4> :<C-U>call VimDiffToggle()<CR>
 nnoremap <silent> <F5> :source $MYVIMRC<CR>
 nnoremap <silent> <C-F5> :e!<CR>
 nnoremap <silent> <F8> :GundoToggle<CR>
