@@ -257,6 +257,9 @@ nnoremap <silent> <Leader>j :NextError<CR>
 nnoremap <silent> <Leader>k :PrevError<CR>
 nnoremap <silent> <Leader>h :OlderError<CR>
 nnoremap <silent> <Leader>l :NewerError<CR>
+nnoremap <silent> <Leader>yf :YcmCompleter FixIt<CR>
+nnoremap <silent> <Leader>yd :YcmDiag<CR>
+nnoremap <silent> <Leader>yr ::YcmRestartServer<CR>
 nnoremap <silent> <Leader><C-]> <C-w><C-]><C-w>T
 nnoremap <silent> <C-L> :<C-U>call HlSearchToggle()<CR>
 nnoremap <silent><C-J> :set paste<CR>m`o<Esc>``:set nopaste<CR>
