@@ -61,3 +61,6 @@
 [submodule "bundle/cscope"]
 	path = bundle/cscope
 	url = https://github.com/brookhong/cscope.vim.git
+[submodule "bundle/dracula-theme"]
+	path = bundle/dracula-theme
+	url = git@github.com:dracula/vim.git
