@@ -5,6 +5,7 @@ execute pathogen#infect()
 call pathogen#helptags()
 
 syntax on
+color dracula
 
 filetype plugin indent on
 
