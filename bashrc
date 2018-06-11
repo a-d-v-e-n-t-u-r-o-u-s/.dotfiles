@@ -162,13 +162,13 @@ export PROMPT_COMMAND
 export EDITOR=/opt/vim/bin/vim
 
 #prv PATH modifications
-export PATH=/opt/todo/bin/:$PATH
+export PATH=/opt/todo2/bin/:$PATH
 export PATH=/opt/scripts/:$PATH
 export PATH=/opt/vim/bin/:$PATH
 export PATH=/opt/eagle/bin/:$PATH
 export PATH=/opt/eclipse-mars.2/:$PATH
 
 SSH_ENV="$HOME/.ssh/environment"
-export GOPATH="/usr/share/go/"
+export GOPATH="$HOME/go"
 export PATH=$GOPATH:$PATH
 export CSCOPE_EDITOR=vim
