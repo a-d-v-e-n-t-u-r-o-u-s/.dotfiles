@@ -222,7 +222,8 @@ if has("cscope")
 set csverb
 endif
 
-let g:cscope_interested_files = '\.c$\|\.h$\|\.mk$\|Makefile'
+let g:cscope_interested_files = '\.c$\|\.h$\|\.mk$\|Makefile|makefile'
+let g:cscope_ignored_dir = 'docs$\|.build$'
 
 let g:ycm_max_diagnostics_to_display = 200
 
