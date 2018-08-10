@@ -157,6 +157,7 @@ then export TODO_SHOW_CWD="$PWD";
     fi;
 fi'
 
+fortune ubuntu-server-tips
 
 export PROMPT_COMMAND
 export EDITOR=/opt/vim/bin/vim
