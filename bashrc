@@ -165,7 +165,7 @@ export EDITOR=/opt/vim/bin/vim
 export PATH=/opt/todo2/bin/:$PATH
 export PATH=/opt/scripts/:$PATH
 export PATH=/opt/vim/bin/:$PATH
-export PATH=/opt/eagle/bin/:$PATH
+export PATH=/opt/eagle/:$PATH
 export PATH=/opt/eclipse-mars.2/:$PATH
 
 SSH_ENV="$HOME/.ssh/environment"
