@@ -5,36 +5,39 @@
       "text": "VIM-BOOKMARKS: check why showing all bookmarks delete them all",
       "priority": "high",
       "creation": 1425398183,
-      "completion": 1444898105,
-      "tasks": []
+      "completion": 1444898105
     },
     {
       "text": "VIM-BOOKMARKS: bookmarks are cleared when going to definion of function",
       "priority": "veryhigh",
       "creation": 1425399056,
-      "completion": 1444898101,
-      "tasks": []
+      "completion": 1444898101
     },
     {
       "text": "TAGLIST: crash of plugin when I jump to other tab but list of fnc,variables are left open and then I'll come back to previous tab",
       "priority": "medium",
-      "creation": 1425474586,
-      "completion": 0,
-      "tasks": []
+      "creation": 1425474586
     },
     {
       "text": "VIM: when highlighting text it jumps to the next declaration, let it stay",
       "priority": "medium",
-      "creation": 1425475543,
-      "completion": 0,
-      "tasks": []
+      "creation": 1425475543
     },
     {
       "text": "VIM: when file is changed from git why is it not reloaded on vim visiting",
       "priority": "veryhigh",
       "creation": 1436796608,
-      "completion": 1444817892,
-      "tasks": []
+      "completion": 1444817892
+    },
+    {
+      "text": "TAGLIST: cannot display AUTOSAR tags hidden behind macros",
+      "priority": "medium",
+      "creation": 1530993262
+    },
+    {
+      "text": "CSCOPE: why jump to definition for static inline does not work",
+      "priority": "high",
+      "creation": 1530995244
     }
   ]
 }
