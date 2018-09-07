@@ -251,6 +251,7 @@ nnoremap  <leader>fi :call CscopeFind('i', expand('<cword>'))<CR>
 nnoremap <silent> <F4> :<C-U>call VimDiffToggle()<CR>
 nnoremap <silent> <F5> :source $MYVIMRC<CR>
 nnoremap <silent> <C-F5> :e!<CR>
+nnoremap <silent> <F7> :Rgrep -w<CR>
 nnoremap <silent> <F8> :GundoToggle<CR>
 nnoremap <silent> <F9> :<C-U>call TabsSpacesToggle()<CR>
 nnoremap <silent> <F10> :<C-U>call SplitToggle()<CR>
