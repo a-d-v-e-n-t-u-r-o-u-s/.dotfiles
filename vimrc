@@ -197,6 +197,8 @@ let g:bookmark_auto_save = 1
 let g:bookmark_highlight_lines = 1
 
 "CommandT options
+let g:CommandTAcceptSelectionSplitCommand = 'sp'
+let g:CommandTAcceptSelectionVSplitCommand = 'vs'
 let g:CommandTGitScanSubmodules = 1
 let g:CommandTTraverseSCM ='pwd'
 
