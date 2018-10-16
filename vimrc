@@ -268,4 +268,5 @@ nnoremap <silent> <Leader>yr ::YcmRestartServer<CR>
 nnoremap <silent> <Leader><C-]> <C-w><C-]><C-w>T
 nnoremap <silent> <C-L> :<C-U>call HlSearchToggle()<CR>
 nnoremap <silent><C-J> :set paste<CR>m`o<Esc>``:set nopaste<CR>
+nmap <silent> * "syiw<Esc>: let @/ = @s<CR>
 "nnoremap <silent><C-k> :set paste<CR>m`O<Esc>``:set nopaste<CR>
