@@ -16,12 +16,14 @@
     {
       "text": "TAGLIST: crash of plugin when I jump to other tab but list of fnc,variables are left open and then I'll come back to previous tab",
       "priority": "medium",
-      "creation": 1425474586
+      "creation": 1425474586,
+      "completion": 1539726498
     },
     {
       "text": "VIM: when highlighting text it jumps to the next declaration, let it stay",
       "priority": "medium",
-      "creation": 1425475543
+      "creation": 1425475543,
+      "completion": 1539728163
     },
     {
       "text": "VIM: when file is changed from git why is it not reloaded on vim visiting",
