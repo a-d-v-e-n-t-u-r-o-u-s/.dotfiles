@@ -9,13 +9,20 @@ and then you must clone all necessary submodules with command:
 
   git submodule update --init --recursive
 
+Backup default .profile and .bashrc with following commands:
+
+  mv ~/.profile ~/.profile_old
+  mv ~/.bashrc ~/.bashrc_old
+
 Symlinks must be created with following manner:
 
 VIMRC:
   ln -s ~/.dotfiles/vimrc ~/.vimrc
   ln -s ~/.dotfiles/ ~/.vim
 BASHRC:
-  ln -s ~/.dotfiles/bashrc ~/.vimrc
+  ln -s ~/.dotfiles/bashrc ~/.bashrc
+PROFILE:
+  ln -s ~/.dotfiles/profile ~/.profile
 VIMPERATOR:
   ln -s ~/.dotfiles/vimperator ~/.vimperatorrc
 
