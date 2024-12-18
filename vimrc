@@ -7,6 +7,8 @@ call pathogen#helptags()
 syntax on
 color dracula
 
+let g:CommandTPreferredImplementation='ruby'
+
 filetype plugin indent on
 
 set number
